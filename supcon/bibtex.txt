@@ -1,0 +1,7 @@
+@inproceedings{xu2022supervised,
+  title={Supervised contrastive learning for generalizable and explainable deepfakes detection},
+  author={Xu, Ying and Raja, Kiran and Pedersen, Marius},
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  pages={379--389},
+  year={2022}
+}

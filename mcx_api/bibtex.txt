@@ -1,0 +1,8 @@
+@InProceedings{Xu_2023_WACV,
+    author    = {Xu, Ying and Raja, Kiran and Verdoliva, Luisa and Pedersen, Marius},
+    title     = {Learning Pairwise Interaction for Generalizable DeepFake Detection},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) Workshops},
+    month     = {January},
+    year      = {2023},
+    pages     = {672-682}
+}
