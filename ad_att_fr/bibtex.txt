@@ -1,8 +1,0 @@
-@incollection{xu2022adversarial,
-  title={Adversarial attacks on face recognition systems},
-  author={Xu, Ying and Raja, Kiran and Ramachandra, Raghavendra and Busch, Christoph},
-  booktitle={Handbook of Digital Face Manipulation and Detection: From DeepFakes to Morphing Attacks},
-  pages={139--161},
-  year={2022},
-  publisher={Springer International Publishing Cham}
-}
