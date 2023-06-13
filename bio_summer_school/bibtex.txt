@@ -1,0 +1,6 @@
+@article{xu2022comprehensive,
+  title={A Comprehensive Analysis of AI Biases in DeepFake Detection With Massively Annotated Databases},
+  author={Xu, Ying and Terh{\"o}rst, Philipp and Raja, Kiran and Pedersen, Marius},
+  journal={arXiv preprint arXiv:2208.05845},
+  year={2022}
+}

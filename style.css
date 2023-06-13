@@ -83,3 +83,9 @@ i.fab {
     max-width: 266px;
   }
 }
+
+.custom-image {
+  height: 550px; /* Adjust the desired height */
+  width: auto;
+  object-fit: contain; /* Maintain aspect ratio */
+}
