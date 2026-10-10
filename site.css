@@ -246,3 +246,23 @@ footer { color: var(--muted); font-size: .85rem; padding: 0 0 48px; }
 .all { margin: 16px 0 0; font-size: .95rem; font-weight: 500; }
 @media (max-width: 900px) { .pubs { grid-template-columns: 1fr; } }
 .role:not(.current) { border-left-color: var(--teal); box-shadow: none; }
+
+/* Work: single column, earlier roles listed under the PhD card */
+.work { grid-template-columns: 1fr; }
+.earlier { list-style: none; margin: 8px 0 0; padding: 0; }
+.earlier > li {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr) auto;
+  gap: 6px 20px;
+  align-items: center;
+  padding: 14px 4px;
+  border-top: 1px solid var(--line);
+}
+.earlier > li:first-child { border-top: 0; }
+.earlier time { color: var(--muted); font-size: .9rem; font-variant-numeric: tabular-nums; }
+.earlier .what { font-weight: 500; }
+.earlier .stack { justify-content: flex-end; }
+@media (max-width: 760px) {
+  .earlier > li { grid-template-columns: 1fr; }
+  .earlier .stack { justify-content: flex-start; }
+}
