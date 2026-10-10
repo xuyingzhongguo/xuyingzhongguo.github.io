@@ -80,26 +80,32 @@ img { max-width: 100%; display: block; }
 .links a:hover { border-color: var(--accent); text-decoration: none; }
 .links i { font-size: 1.05rem; color: var(--muted); }
 
-/* Portrait framed as a face-detector hit */
-.detect { position: relative; margin: 18px; }
+/* Portrait with a face-detector box around the face */
+.detect { position: relative; }
 .detect img {
   aspect-ratio: 1; object-fit: cover; width: 100%;
-  border-radius: 6px;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: #fff;
 }
-.detect::before, .detect::after,
-.detect .c1, .detect .c2 {
-  content: ""; position: absolute; width: 34px; height: 34px;
+.detect .box {
+  position: absolute;
+  left: 26%; right: 26%; top: 20%; bottom: 23%;
+}
+.box::before, .box::after, .box .c1, .box .c2 {
+  content: ""; position: absolute; width: 22px; height: 22px;
   border: 3px solid var(--accent);
 }
-.detect::before { top: -12px; left: -12px; border-right: 0; border-bottom: 0; }
-.detect::after  { top: -12px; right: -12px; border-left: 0; border-bottom: 0; }
-.detect .c1 { bottom: -12px; left: -12px; border-right: 0; border-top: 0; }
-.detect .c2 { bottom: -12px; right: -12px; border-left: 0; border-top: 0; }
-.detect .tag {
-  position: absolute; left: -12px; top: -40px;
+.box::before { top: 0; left: 0; border-right: 0; border-bottom: 0; }
+.box::after  { top: 0; right: 0; border-left: 0; border-bottom: 0; }
+.box .c1 { bottom: 0; left: 0; border-right: 0; border-top: 0; }
+.box .c2 { bottom: 0; right: 0; border-left: 0; border-top: 0; }
+.box .tag {
+  position: absolute; left: 0; bottom: 100%; margin-bottom: 4px;
   background: var(--accent); color: #fff;
-  font: 600 .8rem/1 var(--body);
-  padding: 6px 9px; border-radius: 3px;
+  font: 600 .75rem/1 var(--body);
+  padding: 5px 8px; border-radius: 3px;
+  white-space: nowrap;
 }
 
 /* ---------- Sections ---------- */
