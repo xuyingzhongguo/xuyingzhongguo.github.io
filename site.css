@@ -4,7 +4,9 @@
   --ink: #161b2b;
   --muted: #5b6478;
   --line: #dde2ec;
-  --accent: #e0245e;      /* detector box */
+  --accent: #e0245e;
+  --real: #15a34a;        /* detector box: "real" */
+  --on-real: #ffffff;
   --accent-soft: #fde7ee;
   --teal: #0b8a8f;
   --teal-soft: #dff3f3;
@@ -20,6 +22,8 @@
     --muted: #9aa3b8;
     --line: #2a3145;
     --accent: #ff4f86;
+    --real: #3ccf6e;
+    --on-real: #0f1320;
     --accent-soft: #3a1626;
     --teal: #3cc4c8;
     --teal-soft: #12302f;
@@ -94,7 +98,7 @@ img { max-width: 100%; display: block; }
 }
 .box::before, .box::after, .box .c1, .box .c2 {
   content: ""; position: absolute; width: 22px; height: 22px;
-  border: 3px solid var(--accent);
+  border: 3px solid var(--real);
 }
 .box::before { top: 0; left: 0; border-right: 0; border-bottom: 0; }
 .box::after  { top: 0; right: 0; border-left: 0; border-bottom: 0; }
@@ -102,7 +106,7 @@ img { max-width: 100%; display: block; }
 .box .c2 { bottom: 0; right: 0; border-left: 0; border-top: 0; }
 .box .tag {
   position: absolute; left: 0; bottom: 100%; margin-bottom: 4px;
-  background: var(--accent); color: #fff;
+  background: var(--real); color: var(--on-real);
   font: 600 .75rem/1 var(--body);
   padding: 5px 8px; border-radius: 3px;
   white-space: nowrap;
