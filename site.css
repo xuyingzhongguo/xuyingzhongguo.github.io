@@ -290,3 +290,7 @@ footer { color: var(--muted); font-size: .85rem; padding: 0 0 48px; }
   .work { grid-template-columns: 1fr; }
   .tools { position: static; }
 }
+.tools dt { font-size: .9rem; color: var(--ink); margin: 0 0 2px; }
+.tools dd.why { display: block; font-size: .8rem; color: var(--muted); margin: 0 0 8px; }
+.tools dd + dt { padding-top: 14px; border-top: 1px solid var(--line); }
+.tools dd:not(.why) { margin-bottom: 14px; }
