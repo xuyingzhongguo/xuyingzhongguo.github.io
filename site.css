@@ -4,10 +4,9 @@
   --ink: #161b2b;
   --muted: #5b6478;
   --line: #dde2ec;
-  --accent: #e0245e;
+  --accent: #0b8a8f;
   --real: #15a34a;        /* detector box: "real" */
   --on-real: #ffffff;
-  --accent-soft: #fde7ee;
   --teal: #0b8a8f;
   --teal-soft: #dff3f3;
   --shadow: 0 1px 2px rgba(22, 27, 43, .06), 0 8px 24px -12px rgba(22, 27, 43, .18);
@@ -21,10 +20,9 @@
     --ink: #e9ecf4;
     --muted: #9aa3b8;
     --line: #2a3145;
-    --accent: #ff4f86;
+    --accent: #3cc4c8;
     --real: #3ccf6e;
     --on-real: #0f1320;
-    --accent-soft: #3a1626;
     --teal: #3cc4c8;
     --teal-soft: #12302f;
     --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px -12px rgba(0, 0, 0, .6);
@@ -165,8 +163,6 @@ h2 {
   letter-spacing: -0.02em;
   color: var(--teal);
 }
-.thumb.type.alt { background: var(--accent-soft); }
-.thumb.type.alt span { color: var(--accent); }
 
 .pub-body { padding: 20px 22px 22px; display: flex; flex-direction: column; flex: 1; }
 .venue {
@@ -177,7 +173,6 @@ h2 {
   padding: 3px 10px; border-radius: 999px;
   margin-bottom: 12px;
 }
-.venue.new { color: var(--accent); background: var(--accent-soft); }
 .pub h3 {
   font: 600 1.2rem/1.3 var(--display);
   letter-spacing: -0.01em;
@@ -255,7 +250,7 @@ footer { color: var(--muted); font-size: .85rem; padding: 0 0 48px; }
 .more span { color: var(--muted); font-size: .85rem; white-space: nowrap; margin-left: 6px; }
 .all { margin: 16px 0 0; font-size: .95rem; font-weight: 500; }
 @media (max-width: 900px) { .pubs { grid-template-columns: 1fr; } }
-.role:not(.current) { border-left-color: var(--teal); box-shadow: none; }
+.role:not(.current) { border-left-color: var(--muted); box-shadow: none; }
 
 /* Work: single column, earlier roles listed under the PhD card */
 .work { grid-template-columns: 1fr; }
@@ -304,3 +299,4 @@ footer { color: var(--muted); font-size: .85rem; padding: 0 0 48px; }
 .tools dd.why { display: block; font-size: .8rem; color: var(--muted); margin: 0 0 8px; }
 .tools dd + dt { padding-top: 14px; border-top: 1px solid var(--line); }
 .tools dd:not(.why) { margin-bottom: 14px; }
+.earlier .where { color: var(--muted); font-weight: 400; margin-left: 8px; }
